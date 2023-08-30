@@ -1,0 +1,29 @@
+.reg-completado{
+    background-color: white;
+    border-radius: 0.7rem;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg-completado img{
+    width: 4.5rem;
+}
+
+.btn-volver{
+    margin: 2rem 0;
+    width: 20%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: darkolivegreen;
+}

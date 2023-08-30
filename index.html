@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doguito PetShop|Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/registro.css">
+</head>
+<body>
+    <main>
+        <section class="cabecera">
+            <img class="logo" src="./assets/img/doguito.svg" alt="Logo Doguito PetShop">
+            <h1>PetShop</h1>
+        </section>
+        <section>
+            <h2>Completa tu registro</h2>
+        </section>
+        <form action="./registro-completado.html" class="formulario">
+            <fieldset>
+                <legend>Información Básica</legend>
+                <div class="container">
+                    <label class="input-label" for="nombre">Nombre</label>
+                    <input class="input" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required data-tipo="nombre">
+                    <span class="input-error">Este campo no es válido</span>
+                </div>
+                <div class="container">
+                    <label class="input-label" for="email">Email</label>
+                    <input class="input" type="email" name="email" id="email" placeholder="Ingresa tu email" required data-tipo="email">
+                    <span class="input-error">Este campo no es válido</span>
+                </div>
+                <div class="container">
+                    <label class="input-label" for="password">Password</label>
+                    <input class="input" type="password" name="password" id="password" placeholder="Ingresa tu password" required data-tipo="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" title="Mínimo ocho caracteres, al menos una letra mayúscula, una letra minúscula y un número">
+                    <span class="input-error">Este campo no es válido</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Información Personal</legend>
+                <div class="container">
+                    <label class="input-label" for="nacimiento">Fecha de Nacimiento</label>
+                    <input class="input" type="date" name="nacimiento" id="nacimiento" placeholder="Ingresa tu fecha de nacimiento" required data-tipo="nacimiento">
+                    <span class="input-error">Este campo no es válido</span>
+                </div>
+                <div class="container">
+                    <label class="input-label" for="telefono">Nro de Teléfono</label>
+                    <input class="input" type="text" name="telefono" id="telefono" placeholder="Ingresa tu nro de teléfono" required pattern="\d{10}" minlength="10" maxlength="10" data-tipo="telefono">
+                    <span class="input-error">Este campo no es válido</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dirección Completa</legend>
+                <div class="container">
+                    <label class="input-label" for="direccion">Dirección</label>
+                    <input class="input" type="text" name="direccion" id="direccion" placeholder="Ingresa tu dirección" required pattern="[\s\S]{5,40}" data-tipo="direccion">
+                    <span class="input-error">Este campo no es válido</span>
+                </div>
+                <div class="container">
+                    <label class="input-label" for="ciudad">Ciudad</label>
+                    <input class="input" type="text" name="ciudad" id="ciudad" placeholder="Ingresa tu ciudad" required pattern="[\s\S]{5,40}" data-tipo="ciudad">
+                    <span class="input-error">Este campo no es válido</span>
+                </div>
+                <div class="container">
+                    <label class="input-label" for="provincia">Provincia</label>
+                    <input class="input" type="text" name="provincia" id="provincia" placeholder="Ingresa tu provincia" pattern="[\s\S]{5,40}" required data-tipo="provincia">
+                    <span class="input-error">Este campo no es válido</span>
+                </div>
+            </fieldset>
+            <button class="btn" type="submit">Enviar</button>
+        </form>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>

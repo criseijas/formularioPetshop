@@ -1,0 +1,82 @@
+body{
+    background-color: lightskyblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.cabecera h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.4rem;
+}
+
+.logo{
+    width: 4rem;
+}
+
+section h2{
+    text-align: center;
+}
+
+.formulario{
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.formulario fieldset{
+    border-color: darkblue;
+    border-radius: 0.7rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.container{
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.input{
+    display: block;
+    margin: 0.3rem 0;
+    padding: 0.8rem 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+.input-error{
+    display: none;
+}
+
+.container-invalid{
+    color: red;
+}
+
+.container-invalid .input{
+    outline-color: red;
+}
+
+.container-invalid .input-error{
+    display: block;
+    color: red;
+}
+
+.btn{
+    margin: 1rem 0.5rem;
+    border: 0.15rem solid darkblue;
+    border-radius: 0.5rem;
+    width: 20%;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: darkblue;
+    background-color: lightblue;
+    cursor: pointer;
+}
